@@ -8,5 +8,23 @@ will be added to an element  */
 
 body {
     height: 100vh;
-    background-color: rgb(216, 182, 248);
+    background-color: rgb(159, 141, 176);
 }
+
+/* the grid container for the cards */
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }

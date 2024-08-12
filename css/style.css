@@ -20,19 +20,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+   
 
 }
 
 .card {
+  
+    text-align: center;
+    /* grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px; */
+
+}
+
+.card > .back-face {
+
     width: calc(25% - 10px);
-    height: calc(28% - 10px);
     margin: 5px;
-    padding: 10px;
     position: relative;
-    border: solid;
     -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-
-
+ 
 }

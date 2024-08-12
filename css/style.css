@@ -13,12 +13,26 @@ body {
 
 /* the grid container for the cards */
 
-.card {
-    width: 540px;
-    height: 540px;
+.grid-container {
+    width: 620px;
+    height: 600px;
+    padding-top: 10px;
     display: flex;
-    background-color: rgb(154, 240, 244);
     flex-wrap: wrap;
     margin: auto;
+
+}
+
+.card {
+    width: calc(25% - 10px);
+    height: calc(28% - 10px);
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    border: solid;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+
 
 }

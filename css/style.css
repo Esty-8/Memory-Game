@@ -74,11 +74,11 @@ body {
 
 
 .button {
-    margin: 6px;
+    /* margin: 6px; */
     padding: 12px;
     position: absolute;
     font-size: 16px;
-    left: 50%;
+    left: 46%;
     transform: translate(-50%, -50%);
     top: 90%;
     background-color:#f87061;

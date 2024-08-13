@@ -1,12 +1,11 @@
-// the function to flip the cards
-// const imageCards = document.querySelectorAll('.card');
+const cardImage = document.querySelectorAll('img');
 
-// function flipImage() {
-//    this.classList.toggle("flip");
-// }
+// function that flips the image when we click on it
+function flipImage() {
+   console.log('clicked')
+}
 
-// imageCards.forEach(card => card.addEventListener('click', flipImage))
-
+cardImage.forEach((image) => image.addEventListener('click', flipImage))
 
 const arrayCards = [
    {
@@ -65,4 +64,4 @@ const arrayCards = [
 arrayCards.sort(() =>  0.5 - Math.random())
 
 
-console.log(arrayCards)
+

@@ -59,4 +59,10 @@ const arrayCards = [
    }
 ]
 
+
+//  Math.random returns a nr.between 0 to less than -1
+//we're checking that it's smaller than 0.5 or larger than
+arrayCards.sort(() =>  0.5 - Math.random())
+
+
 console.log(arrayCards)

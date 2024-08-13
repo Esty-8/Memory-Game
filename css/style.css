@@ -25,7 +25,11 @@ body {
 
 }
 
-
+#image {
+  width: 27%;
+  height: 27%;
+  padding: 5px;
+}
 
 .card {
 

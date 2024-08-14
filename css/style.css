@@ -14,24 +14,27 @@ body {
 /* the grid container for the cards */
 
 .grid-container {
-    width: 530px;
-    height: 520px;
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 620px;
+    height: 630px;
+    /* padding: 10px; */
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     margin: auto;
-    perspective: 1000px;
+    /* background-color: #f87061; */
+    /* perspective: 1000px; */
    
 
 }
 
 #image {
-  width: 27%;
-  height: 27%;
-  padding: 5px;
+  width: 87%;
+  height: 77%;
+  padding: 0;
+  margin: 0;
 }
 
-.card {
+/* .card {
 
   width: calc(25% - 10px);
   height: calc(33.333% - 10px);
@@ -42,22 +45,22 @@ body {
   transform: scale(1);
   transform-style: preserve-3d;
   /* to produce the movement */
-  transition: transform .5s;
+  /* transition: transform .5s;
   backface-visibility: hidden;
                 
-}
+} */ */
 
 /* Adds a click effect to the images */
 
-.card:active {
+/* .card:active {
     transform: scale(0.97);
     transition: transform .2s;
   }
 
   /* rotates the card to 180 deg */
-.card.flip {
+/* .card.flip {
     transform: rotateY(180deg);
-}
+} */ */
 
 
 .front-face,
@@ -80,7 +83,7 @@ body {
     font-size: 16px;
     left: 46%;
     transform: translate(-50%, -50%);
-    top: 90%;
+    top: 95%;
     background-color:#f87061;
     color: #fff;
     border-radius: 15px;

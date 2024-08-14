@@ -14,14 +14,12 @@ body {
 /* the grid container for the cards */
 
 .grid-container {
-    width: 620px;
-    height: 630px;
-    /* padding: 10px; */
-    padding-top: 10%;
+    width: 540px;
+    height: 580px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: auto;
-    /* background-color: #f87061; */
+    padding-top: 8%;
     /* perspective: 1000px; */
    
 
@@ -29,9 +27,9 @@ body {
 
 #image {
   width: 87%;
-  height: 77%;
-  padding: 0;
-  margin: 0;
+  height: 87%;
+  padding: 0px;
+
 }
 
 /* .card {

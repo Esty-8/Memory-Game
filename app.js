@@ -1,8 +1,15 @@
 const cardImage = document.querySelectorAll('img');
+const choosenCard = []
 
-// function that flips the image when we click on it
+//  flips the image when we click on it
 function flipImage() {
-   console.log('clicked')
+   // this keword will show whatever card number we click on
+   const cardOfId = this.getAttribute('data-id');
+   // we accessing the names from the array
+   let arrayOfNames = arrayCards[cardOfId].name
+   choosenCard.push(arrayOfNames)
+   console.log(arrayOfNames)
+
 }
 
 cardImage.forEach((image) => image.addEventListener('click', flipImage))

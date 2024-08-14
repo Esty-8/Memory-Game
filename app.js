@@ -1,5 +1,20 @@
 const cardImage = document.querySelectorAll('img');
 const choosenCard = []
+const cardsIdsChoosen = []
+
+
+
+function matchCards() {
+const cards = document.querySelectorAll('img');
+
+  if (choosenCard[0] == choosenCard[1]) {
+      alert('match')
+   cards[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/background.png')
+  }
+}
+
+
+
 
 //  flips the image when we click on it
 function flipImage() {
@@ -7,22 +22,18 @@ function flipImage() {
    const cardOfId = this.getAttribute('data-id');
    // we accessing the names from the array
    choosenCard.push(arrayCards[cardOfId].name)
+   console.log(choosenCard)
+   cardsIdsChoosen.push(cardOfId)
+   console.log(cardsIdsChoosen)
+   //we adding the new images to the element
    this.setAttribute('src', arrayCards[cardOfId].img)
+   if (choosenCard.length === 2) {
+      setTimeout( matchCards, 300)
+   }
 
 }
 
-cardImage.forEach((image) => image.addEventListener('click', flipImage))
-
-// for(let image of cardImage) {
-//    image.addEventListener('click', changeImage)
-// }
-
-// function changeImage(e){
-//    const cardOfId = this.getAttribute('data-id');
-//    let newImage = e.target.setAttribute('src', arrayCards[cardOfId]);
-//    document.body.classList.value = newImage;
-// }
-
+cardImage.forEach((image) => image.addEventListener('click', flipImage));
 
 
 
@@ -77,6 +88,12 @@ const arrayCards = [
       img: 'assets/images/wonderwoman.png',
    }
 ]
+
+
+
+
+   // this.setAttribute('src', arrayCards[cardOfId].img)
+
 
 
 //  Math.random returns a nr.between 0 to less than -1

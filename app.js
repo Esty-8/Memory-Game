@@ -1,34 +1,46 @@
 const cardImage = document.querySelectorAll('img');
-const choosenCard = []
-const cardsIdsChoosen = []
+let choosenCard = []
+let cardsIdsChoosen = []
+const score =[]
 
 
 
 function matchCards() {
-const cards = document.querySelectorAll('img');
-
-  if (choosenCard[0] == choosenCard[1]) {
-      alert('match')
-   cards[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/background.png')
+  const cardsImages = document.querySelectorAll('img');
+  const optionOne = cardsIdsChoosen[0]
+  const optionTwo = cardsIdsChoosen[1]
+   console.log('check for match')
+   
+  if (choosenCard[0] === choosenCard[1]) {
+      alert('you found a match')
+   cardsImages[optionOne].setAttribute('src', 'assets/images/background.png')
+   cardsImages[optionOne].removeEventListener('click', flipImage)
+   cardsImages[optionTwo].setAttribute('src', 'assets/images/background.png')
+   cardsImages[optionTwo].removeEventListener('click', flipImage)
+   score.push(choosenCard)
+  } else {
+   cardsImages[optionOne].setAttribute('src', 'assets/images/dc-comics.png')
+   cardsImages[optionTwo].setAttribute('src', 'assets/images/dc-comics.png')
   }
-}
+
+  choosenCard = []
+  cardsIdsChoosen = []
+} 
 
 
 
-
-//  flips the image when we click on it
 function flipImage() {
    // this keword will show whatever card number we click on
    const cardOfId = this.getAttribute('data-id');
    // we accessing the names from the array
    choosenCard.push(arrayCards[cardOfId].name)
-   console.log(choosenCard)
    cardsIdsChoosen.push(cardOfId)
+   console.log(choosenCard)
    console.log(cardsIdsChoosen)
    //we adding the new images to the element
    this.setAttribute('src', arrayCards[cardOfId].img)
-   if (choosenCard.length === 2) {
-      setTimeout( matchCards, 300)
+   if (choosenCard.length == 2) {
+      setTimeout( matchCards, 500)
    }
 
 }
@@ -86,13 +98,8 @@ const arrayCards = [
    {
       name: 'wonderwoman',
       img: 'assets/images/wonderwoman.png',
-   }
+   },
 ]
-
-
-
-
-   // this.setAttribute('src', arrayCards[cardOfId].img)
 
 
 

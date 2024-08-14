@@ -6,62 +6,75 @@ function flipImage() {
    // this keword will show whatever card number we click on
    const cardOfId = this.getAttribute('data-id');
    // we accessing the names from the array
-   let arrayOfNames = arrayCards[cardOfId].name
-   choosenCard.push(arrayOfNames)
-   console.log(arrayOfNames)
+   choosenCard.push(arrayCards[cardOfId].name)
+   this.setAttribute('src', arrayCards[cardOfId].img)
 
 }
 
 cardImage.forEach((image) => image.addEventListener('click', flipImage))
 
+// for(let image of cardImage) {
+//    image.addEventListener('click', changeImage)
+// }
+
+// function changeImage(e){
+//    const cardOfId = this.getAttribute('data-id');
+//    let newImage = e.target.setAttribute('src', arrayCards[cardOfId]);
+//    document.body.classList.value = newImage;
+// }
+
+
+
+
+
 const arrayCards = [
    {
       name: 'batman',
-      img: '//assets/images/batman.png'
+      img: 'assets/images/batman.png',
    }, 
    {
       name: 'batwoman',
-      img: '//assets/images/batwoman.png'
+      img: 'assets/images/batwoman.png',
    }, 
    {
       name: 'harley',
-      img: '//assets/images/Harley.png'
+      img: 'assets/images/Harley.png',
    }, 
    {
       name: 'joker',
-      img: '//assets/images/joker.png'
+      img: 'assets/images/joker.png',
    }, 
    {
       name: 'superman',
-      img: '//assets/images/superman.png'
+      img: 'assets/images/superman.png',
    }, 
    {
       name: 'wonderwoman',
-      img: '//assets/images/wonderwoman.png'
+      img: 'assets/images/wonderwoman.png',
    }, 
    {
       name: 'batman',
-      img: '//assets/images/batman.png'
+      img: 'assets/images/batman.png',
    }, 
    {
       name: 'batwoman',
-      img: '//assets/images/batwoman.png'
+      img: 'assets/images/batwoman.png',
    }, 
    {
       name: 'harley',
-      img: '//assets/images/Harley.png'
+      img: 'assets/images/Harley.png',
    }, 
    {
       name: 'joker',
-      img: '//assets/images/joker.png'
+      img: 'assets/images/joker.png',
    }, 
    {
       name: 'superman',
-      img: '//assets/images/superman.png'
+      img: 'assets/images/superman.png',
    }, 
    {
       name: 'wonderwoman',
-      img: '//assets/images/wonderwoman.png'
+      img: 'assets/images/wonderwoman.png',
    }
 ]
 

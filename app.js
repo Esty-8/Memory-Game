@@ -15,13 +15,13 @@ function matchCards() {
    cardsImages[cardsIdsChoosen[0]].removeEventListener('click', flipImage)
    cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/background.png')
    cardsImages[cardsIdsChoosen[1]].removeEventListener('click', flipImage)
-   score.push(choosenCard)
+   scoreArray.push(choosenCard)
   } else {
    //flip them back if they don't match
    cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/dc-comics.png')
    cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/dc-comics.png')
   }
-
+  showResult.innerHTML = scoreArray.length
   choosenCard = []
   cardsIdsChoosen = []
 

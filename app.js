@@ -1,30 +1,35 @@
 const cardImage = document.querySelectorAll('img');
+const showResult = document.querySelector('#score')
 let choosenCard = []
 let cardsIdsChoosen = []
-const score =[]
+const scoreArray =[]
 
 
 
 function matchCards() {
   const cardsImages = document.querySelectorAll('img');
-  const optionOne = cardsIdsChoosen[0]
-  const optionTwo = cardsIdsChoosen[1]
-   console.log('check for match')
    
   if (choosenCard[0] === choosenCard[1]) {
       alert('you found a match')
-   cardsImages[optionOne].setAttribute('src', 'assets/images/background.png')
-   cardsImages[optionOne].removeEventListener('click', flipImage)
-   cardsImages[optionTwo].setAttribute('src', 'assets/images/background.png')
-   cardsImages[optionTwo].removeEventListener('click', flipImage)
+   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/background.png')
+   cardsImages[cardsIdsChoosen[0]].removeEventListener('click', flipImage)
+   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/background.png')
+   cardsImages[cardsIdsChoosen[1]].removeEventListener('click', flipImage)
    score.push(choosenCard)
   } else {
-   cardsImages[optionOne].setAttribute('src', 'assets/images/dc-comics.png')
-   cardsImages[optionTwo].setAttribute('src', 'assets/images/dc-comics.png')
+   //flip them back if they don't match
+   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/dc-comics.png')
+   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/dc-comics.png')
   }
 
   choosenCard = []
   cardsIdsChoosen = []
+
+  //if we get all the right cards
+  //12 cards divided by 2 , 6 matches
+  if(scoreArray.length == (arrayCards.length / 2)) {
+     showResult.innerHTML = 'You win !'
+  }
 } 
 
 

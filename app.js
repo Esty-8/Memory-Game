@@ -2,11 +2,17 @@ const cardImage = document.querySelectorAll('img');
 const showResult = document.querySelector('#score')
 const timeLeft = document.querySelector("#time-left");
 const sliderFill = document.querySelector(".fill");
-const startCount = 30
+const startCount = 5
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
 const scoreArray =[]
+
+function playSound() {
+   let sound = new Audio('//assets/images/ding.mp3');
+   sound.play();
+}
+
 
 const timerId = setInterval(() => {
    timeRemain--
@@ -14,10 +20,17 @@ const timerId = setInterval(() => {
    sliderFill.style.width = (timeRemain / startCount) * 100 + '%'
    if (timeRemain <= 0) {
      clearInterval(timerId)
-     timeLeft.textContent = 'You Lost !'
-     surprise()
+     timeLeft.textContent = 'Game Over'
+     playSound()
    }
+
  }, 1000)
+
+
+
+
+
+
 
 
 

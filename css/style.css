@@ -12,13 +12,13 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   float: right;
   padding: 12px;
   color: #fcfdfe;
   /* width: 30px; */
   /* height: 30px; */
-  margin: 15px;
+  margin-left: 15px;
   border-radius: 50px;
   border: 3px solid rgb(106, 23, 23);
 
@@ -45,11 +45,11 @@ h2 {
 
 .fill {
   height: 20px;
-  background-color: rgb(125, 249, 208);
+  background-color: #f83924;
   width: 100%;
+  /* border: 3px solid rgb(106, 23, 23); */
  
 }
-
 
 
 /* the grid container for the cards */
@@ -69,6 +69,7 @@ h2 {
   height: 87%;
   padding: 0px;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -83,12 +84,12 @@ h2 {
   border-radius: 5px;
 }
 
-.front-face {
+/* .front-face {
     transform: rotateY(180deg);
-  }
+  } */
 
 
-.button {
+#reset-button {
  
     padding: 12px;
     position: absolute;
@@ -99,11 +100,12 @@ h2 {
     background-color:#f87061;
     color: #fff;
     border-radius: 15px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.8);
   
 }
 
 
-.button:hover {
+#reset-button:hover {
     background-color:#002ead;
     transition: 0.7s;
 }

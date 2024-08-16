@@ -2,15 +2,28 @@ const cardImage = document.querySelectorAll('img');
 const showResult = document.querySelector('#score')
 const timeLeft = document.querySelector("#time-left");
 const sliderFill = document.querySelector(".fill");
-const startCount = 5
+const soundGame = document.querySelector('.track')
+const resetButton = document.getElementById('reset-button');
+const startCount = 10
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
 const scoreArray =[]
 
+
+//  resets the page to its initial state.
+function resetGame() {
+   location.reload();
+}
+
+resetButton.addEventListener("click", resetGame);
+
+
+// time is up
 function playSound() {
-   let sound = new Audio('//assets/images/ding.mp3');
-   sound.play();
+   const audio = new Audio('assets/images/player-2042.mp3');
+   audio.play();
+   
 }
 
 

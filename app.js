@@ -5,7 +5,7 @@ const gameOver = document.querySelector('#gameOver');
 const sliderFill = document.querySelector(".fill");
 const soundGame = document.querySelector('.track')
 const resetButton = document.getElementById('reset-button');
-const startCount = 3
+const startCount = 40
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
@@ -32,12 +32,15 @@ const timerId = setInterval(() => {
    timeRemain--
    timeLeft.textContent = timeRemain
    sliderFill.style.width = (timeRemain / startCount) * 100 + '%'
-   if (timeRemain <= 0) {
+   if (timeRemain <= 0 || scoreArray.length == (arrayCards.length / 2)) {
      clearInterval(timerId)
-     timeLeft.textContent = '0'
-     gameOver.textContent = 'GAME OVER'
+     timeLeft.textContent = ''
+   //   gameOver.textContent = 'GAME OVER'
+   if (timeRemain <= 0) {
+       gameOver.textContent = 'GAME OVER'
      playSound()
    }
+}
 
  }, 1000)
 
@@ -71,6 +74,7 @@ function matchCards() {
   //if we get all the right cards
   //12 cards divided by 2 , 6 matches
   if(scoreArray.length == (arrayCards.length / 2)) {
+   
      showResult.innerHTML = 'You win !'
   }
 } 

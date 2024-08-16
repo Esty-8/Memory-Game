@@ -1,10 +1,11 @@
 const cardImage = document.querySelectorAll('img');
-const showResult = document.querySelector('#score')
+const showResult = document.querySelector('#score');
 const timeLeft = document.querySelector("#time-left");
+const gameOver = document.querySelector('#gameOver');
 const sliderFill = document.querySelector(".fill");
 const soundGame = document.querySelector('.track')
 const resetButton = document.getElementById('reset-button');
-const startCount = 10
+const startCount = 3
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
@@ -33,7 +34,8 @@ const timerId = setInterval(() => {
    sliderFill.style.width = (timeRemain / startCount) * 100 + '%'
    if (timeRemain <= 0) {
      clearInterval(timerId)
-     timeLeft.textContent = 'Game Over'
+     timeLeft.textContent = '0'
+     gameOver.textContent = 'GAME OVER'
      playSound()
    }
 

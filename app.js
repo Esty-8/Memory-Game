@@ -2,11 +2,22 @@ const cardImage = document.querySelectorAll('img');
 const showResult = document.querySelector('#score')
 const timeLeft = document.querySelector("#time-left");
 const sliderFill = document.querySelector(".fill");
-const startCount = 60
+const startCount = 30
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
 const scoreArray =[]
+
+const timerId = setInterval(() => {
+   timeRemain--
+   timeLeft.textContent = timeRemain
+   sliderFill.style.width = (timeRemain / startCount) * 100 + '%'
+   if (timeRemain <= 0) {
+     clearInterval(timerId)
+     timeLeft.textContent = 'You Lost !'
+     surprise()
+   }
+ }, 1000)
 
 
 

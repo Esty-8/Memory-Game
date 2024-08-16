@@ -11,15 +11,39 @@ body {
     background-color: rgb(159, 141, 176);
 }
 
+h1 {
+  font-size: 55px;
+   float: right;
+  /* justify-content:end; */
+  /* align-items:end; */
+  padding: 12px;
+  color: #fcfdfe;
+  margin: 10px;
+  background-color: #f87061;
+
+}
+
+h2 {
+  font-size: 30px;
+  background-color: #f87061;
+  color: #fcfdfe;
+  margin-left: 10px;
+  padding: 10px;
+
+}
+
+
+
 /* the grid container for the cards */
 
 #grid-container {
-    width: 540px;
-    height: 580px;
+    width: 550px;
+    height: 560px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: auto;
-    padding-top: 8%;
+    /* padding-top: 8%; */
+    background-color: #f87061;
     /* perspective: 1000px; */
    
 
@@ -29,36 +53,11 @@ body {
   width: 87%;
   height: 87%;
   padding: 0px;
+  border-radius: 10px;
 
 }
 
-/* .card {
 
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
-  position: relative;
-  transform-style: preserve-3d;
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
-  transform: scale(1);
-  transform-style: preserve-3d;
-  /* to produce the movement */
-  /* transition: transform .5s;
-  backface-visibility: hidden;
-                
-} */ */
-
-/* Adds a click effect to the images */
-
-/* .card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
-  }
-
-  /* rotates the card to 180 deg */
-/* .card.flip {
-    transform: rotateY(180deg);
-} */ */
 
 
 .front-face,
@@ -75,7 +74,7 @@ body {
 
 
 .button {
-    /* margin: 6px; */
+ 
     padding: 12px;
     position: absolute;
     font-size: 16px;

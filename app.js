@@ -1,5 +1,9 @@
 const cardImage = document.querySelectorAll('img');
 const showResult = document.querySelector('#score')
+const timeLeft = document.querySelector("#time-left");
+const sliderFill = document.querySelector(".fill");
+const startCount = 60
+let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
 const scoreArray =[]

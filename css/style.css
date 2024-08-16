@@ -28,8 +28,24 @@ h2 {
   background-color: #f87061;
   color: #fcfdfe;
   margin-left: 10px;
-  padding: 10px;
+  /* padding: 6px; */
+  width: fit-content;
 
+}
+
+.custom-slider {
+  width: 323px;
+  margin-left: 420px;
+  padding-top: 10px;
+  
+}
+
+
+.fill {
+  height: 20px;
+  background-color: rgb(125, 249, 208);
+  width: 100%;
+ 
 }
 
 

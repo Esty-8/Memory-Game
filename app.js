@@ -27,6 +27,11 @@ function playSound() {
    
 }
 
+// winning sound
+function playWin() {
+   const audioWin = new Audio('assets/images/goodresult-82807.mp3');
+   audioWin.play()
+}
 
 const timerId = setInterval(() => {
    timeRemain--
@@ -34,10 +39,10 @@ const timerId = setInterval(() => {
    sliderFill.style.width = (timeRemain / startCount) * 100 + '%'
    if (timeRemain <= 0 || scoreArray.length == (arrayCards.length / 2)) {
      clearInterval(timerId)
-     timeLeft.textContent = ''
+     timeLeft.textContent = '0'
    //   gameOver.textContent = 'GAME OVER'
    if (timeRemain <= 0) {
-       gameOver.textContent = 'YOU  LOST !'
+       gameOver.textContent = `Game  Over`  
      playSound()
    }
 }
@@ -75,7 +80,9 @@ function matchCards() {
   //if we get all the right cards
   //12 cards divided by 2 , 6 matches
   if(scoreArray.length == (arrayCards.length / 2)) {
-     showResult.innerHTML = 'You win !'
+     showResult.innerHTML = ''
+     gameOver.textContent = `You Win !!!`
+     playWin()
   }
 }
 

@@ -3,8 +3,9 @@ const showResult = document.querySelector('#score');
 const timeLeft = document.querySelector("#time-left");
 const gameOver = document.querySelector('#gameOver');
 const sliderFill = document.querySelector(".fill");
-const soundGame = document.querySelector('.track')
+const soundGame = document.querySelector('.track');
 const resetButton = document.getElementById('reset-button');
+const startButton = document.getElementById('start-button');
 const startCount = 40
 let timeRemain = startCount
 let choosenCard = []
@@ -18,7 +19,6 @@ function resetGame() {
 }
 
 resetButton.addEventListener("click", resetGame);
-
 
 // time is up
 function playSound() {
@@ -43,12 +43,6 @@ const timerId = setInterval(() => {
 }
 
  }, 1000)
-
-
-
-
-
-
 
 
 
@@ -104,9 +98,7 @@ function flipImage() {
 
 cardImage.forEach((image) => image.addEventListener('click', flipImage));
 
-
-
-
+// images for the cards
 const arrayCards = [
    {
       name: 'batman',

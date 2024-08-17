@@ -12,13 +12,15 @@
   <!-- counting down the seconds -->
     <div> 
       <h1 id="time-left"></h1>
-      <h2 id="gameOver"></h2>
-      <div class="custom-slider">
-      <div class="fill"></div>
-      </div>
+      <h3 id="gameOver"></h3>
+    </div>
+    <div id="slide-bar">
+        <div class="custom-slider">
+          <div class="fill"></div>
+    </div>
     </div>
        <!-- score of the game -->
-        <h2>Score: <span id="score"></span></h2>
+        <h2>Score <span id="score"></span></h2>
     <!-- the grid layout of the cards-->
       <div id="grid-container">
            <img id="image" src="assets/images/dc-comics.png" data-id="0">
@@ -36,10 +38,10 @@
         </div>
    <!-- the reset game button -->
       <div>
-        <button type="button" id="start-button" onclick="window.location.reload()">Start Game</button>
+        <button type="button" id="start-button" onclick="window.location.reload()">Start</button>
       </div>
       <div> 
-        <button type="button" id="reset-button">Reset Game</button>
+        <button type="button" id="reset-button">Reset</button>
       </div>
    
 

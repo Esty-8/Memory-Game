@@ -37,7 +37,7 @@ const timerId = setInterval(() => {
      timeLeft.textContent = ''
    //   gameOver.textContent = 'GAME OVER'
    if (timeRemain <= 0) {
-       gameOver.textContent = 'GAME OVER'
+       gameOver.textContent = 'YOU  LOST !'
      playSound()
    }
 }

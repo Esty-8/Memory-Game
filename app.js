@@ -57,8 +57,8 @@ function matchCards() {
    //if the user clicks on the same image
   if (cardsIdsChoosen[0] == cardsIdsChoosen[1]) {
       
-   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/background.png')
-   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/background.png')
+   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/dc-comics.png')
+   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/dc-comics.png')
    alert('You have clicked the same image!')
    //if the user founds a match
    } else if (choosenCard[0] === choosenCard[1]) {

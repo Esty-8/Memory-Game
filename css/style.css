@@ -93,14 +93,12 @@ h2 {
   } */
 
 
-#reset-button {
+#reset-button{
  
-    padding: 12px;
-    position: absolute;
-    font-size: 16px;
-    left: 46%;
-    transform: translate(-50%, -50%);
-    top: 95%;
+    float: inline-end;
+    font-size: 15px;
+    width: 80px;
+    margin-right: 42%;
     background-color:#f87061;
     color: #fff;
     border-radius: 15px;
@@ -108,8 +106,24 @@ h2 {
   
 }
 
+#start-button {
+  float: inline-start;
+  font-size: 15px;
+  width: 80px;
+  margin-left: 40%;
+  background-color:#f87061;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
 
 #reset-button:hover {
     background-color:#002ead;
     transition: 0.7s;
+}
+
+#start-button:hover {
+  background-color:#002ead;
+  transition: 0.7s;
 }

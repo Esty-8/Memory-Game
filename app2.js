@@ -112,7 +112,7 @@ function flipImage() {
    //we adding the new images to the element
    this.setAttribute('src', arrayCards[cardOfId].img)
    if (choosenCard.length == 2) {
-      setTimeout( matchCards, 500)
+      setTimeout( matchCards, 400)
    }
 
 }
@@ -169,6 +169,38 @@ const arrayCards = [
       name: 'wonderwoman',
       img: 'assets/images/wonderwoman.png',
    },
+   {
+    name: 'adam',
+    img: 'assets/images/adam.png',
+  },
+  {
+    name: 'flash',
+    img: 'assets/images/flash.png',
+  },
+  {
+    name: 'adam',
+    img: 'assets/images/adam.png',
+  },
+  {
+    name: 'aquaman',
+    img: 'assets/images/aquaman.png',
+  },
+  {
+    name: 'parrow',
+    img: 'assets/images/parrow.png',
+  },
+  {
+    name: 'flash',
+    img: 'assets/images/flash.png',
+  },
+  {
+    name: 'aquaman',
+    img: 'assets/images/aquaman.png',
+  },
+  {
+    name: 'parrow',
+    img: 'assets/images/parrow.png',
+  },
 ]
 
 

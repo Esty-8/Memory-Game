@@ -6,7 +6,7 @@ const sliderFill = document.querySelector(".fill");
 const soundGame = document.querySelector('.track');
 const resetButton = document.getElementById('reset-button');
 const startButton = document.getElementById('start-button');
-const startCount = 40
+const startCount = 42
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
@@ -32,6 +32,20 @@ function playWin() {
    const audioWin = new Audio('assets/images/goodresult-82807.mp3');
    audioWin.play()
 }
+
+
+
+//game theme sound
+function themeSong(src) {
+   this.sound = document.createElement("audio");
+   this.sound.src = 'assets/images/game.mp3';
+   document.body.appendChild(this.sound);
+   this.sound.play();
+   }
+ 
+
+
+
 
 const timerId = setInterval(() => {
    timeRemain--

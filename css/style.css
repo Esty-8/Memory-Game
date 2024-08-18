@@ -50,23 +50,30 @@ h3 {
   left: 34%; 
  } 
 
+
+
 #level , a{
   font-size: 20px;
   color: #fcfdfe;
   text-decoration: none;
-  /* width: 110px; */
   padding: 8px;
-  /* height: 95px; */
   background-color: #f87061;
   border: 3px solid #37c7eb;
  }
+
+ #grid {
+  width: 580px !important;
+  height: 720px !important;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto!important;
+  margin: auto;
+}
 
 #slide-bar .custom-slider {
   width: 263px;
   margin-left: 770px;
   position: relative;
 
-  
 }
 
 

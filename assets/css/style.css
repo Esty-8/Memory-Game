@@ -71,7 +71,7 @@ h3 {
 
 #slide-bar .custom-slider {
   width: 263px;
-  margin-left: 770px;
+  margin-left: 720px;
   position: relative;
 
 }
@@ -269,7 +269,7 @@ h3 {
 
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
   body {
     color: #37c7eb;
   }

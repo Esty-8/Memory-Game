@@ -17,6 +17,7 @@ The memory game built in JavaScript is an engaging and interactive web-based gam
 ## User Stories
 
 ![Responsive Landing Page](/assets/images/backlog.png)
+* As can be seen from the project board, the completed sprint was composed of 8 separate items. Having used the MoSCoW approach to prioritisation, 5 were classified as "Must-Have" making up less than 60% of the tasks as recommended. The rest of the first sprint was made up of "Should-Have", "Could-Have". The project backlog contains 1 "Won't Have" items.
 
 ## Features
 * The game displays 12 cards face down.
@@ -36,9 +37,27 @@ The memory game built in JavaScript is an engaging and interactive web-based gam
   ![Responsive Landing Page](/assets/images/level.png)
 
 
-### Testing
-* HTML - 
+## Testing
+* HTML -  errors were found when passing the code through the official validator on both html files https://validator.w3.org/
 
+* CSS - No errors were found when passing the code through the official validator https://jigsaw.w3.org/css-validator/validator
+ ![Responsive Landing Page](/assets/images/validator.png)
+
+
+### Lighthouse Testing
+
+#### Homepage
+ ![Responsive Landing Page](/assets/images/validator.png)
+
+#### Level 2 Homepage
+ ![Responsive Landing Page](/assets/images/validator.png)
+
+### Bugs
+* 
+
+*
+
+*
 
 
 ## Technologies Used 

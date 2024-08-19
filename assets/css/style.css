@@ -86,7 +86,7 @@ h3 {
 }
 
 .btn-game {
-  display:flexbox;
+  display:flex;
   padding: 85px;
   margin-right: 48px;
 }

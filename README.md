@@ -41,7 +41,8 @@ The memory game built in JavaScript is an engaging and interactive web-based gam
 * HTML -  errors were found when passing the code through the official validator on both html files https://validator.w3.org/
 
 * CSS - No errors were found when passing the code through the official validator https://jigsaw.w3.org/css-validator/validator
- ![Responsive Landing Page](/assets/images/validator.png)
+
+ ![Responsive Landing Page](/assets/images/validator.ong.png)
 
 
 ### Lighthouse Testing

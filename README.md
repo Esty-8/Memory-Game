@@ -4,7 +4,7 @@ The memory game built in JavaScript is an engaging and interactive web-based gam
 
 ## Design
 
-![Responsive Landing Page](https://github.com/user-attachments/assets/images/landining-page.png)
+![Responsive Landing Page](/assets/images/landining-page.png)
 
 
 ## Wireframes 
@@ -13,10 +13,20 @@ The memory game built in JavaScript is an engaging and interactive web-based gam
 
 
 ## Features
+* The game displays 12 cards face down.
+* The cards are displayed in a grid with three rows and four columns.
+* There are a total of 12 cards with six unique photos, i.e., each unique photo appears on exactly two cards.
+* When the player clicks on a card, the corresponding photo will be revealed momentarily.
+* If the player consecutively clicks on two cards that have the same photo, both cards will be turned over.  
+* The player wins once all cards are facing up.
+* The game shows a score that reflects the player’s performance based on the number of match cards.
+* A score is displayed to keep track of the matched cards.
+* A restart button allows the player to reset the game board, the timer, and the score.
+* The player can choose between  levels of difficulty (Level 2). Increased difficulty means: decreasing the 
+  time available to complete and increasing the number of cards.
 
 
-
-#### The Cards Board
+### The Cards Board
 
 
 ### Lighthouse Testing

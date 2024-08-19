@@ -23,14 +23,14 @@ resetButton.addEventListener("click", resetGame);
 
 // time is up
 function playSound() {
-   const audio = new Audio('images/player-2042.mp3');
+   const audio = new Audio('assets/images/player-2042.mp3');
    audio.play();
    
 }
 
 // winning sound
 function playWin() {
-   const audioWin = new Audio('images/goodresult-82807.mp3');
+   const audioWin = new Audio('assets/images/goodresult-82807.mp3');
    audioWin.play()
 }
 
@@ -39,7 +39,7 @@ function playWin() {
 //game theme sound
 function themeSong(src) {
    this.sound = document.createElement("audio");
-   this.sound.src = 'images/game.mp3';
+   this.sound.src = 'assets/images/game.mp3';
    document.body.appendChild(this.sound);
    this.sound.play();
    }
@@ -71,21 +71,21 @@ function matchCards() {
    //if the user clicks on the same image
   if (cardsIdsChoosen[0] == cardsIdsChoosen[1]) {
       
-   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'images/dc-comics.png')
-   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'images/dc-comics.png')
+   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/dc-comics.png')
+   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/dc-comics.png')
    alert('You have clicked the same image!')
    //if the user founds a match
    } else if (choosenCard[0] === choosenCard[1]) {
    alert('you found a match')
-   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'images/background.png')
+   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/background.png')
    cardsImages[cardsIdsChoosen[0]].removeEventListener('click', flipImage)
-   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'images/background.png')
+   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/background.png')
    cardsImages[cardsIdsChoosen[1]].removeEventListener('click', flipImage)
    scoreArray.push(choosenCard)
    } else {
    //flip them back if they don't match
-   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'images/dc-comics.png')
-   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'images/dc-comics.png')
+   cardsImages[cardsIdsChoosen[0]].setAttribute('src', 'assets/images/dc-comics.png')
+   cardsImages[cardsIdsChoosen[1]].setAttribute('src', 'assets/images/dc-comics.png')
    }
 
   choosenCard = []
@@ -124,51 +124,51 @@ cardImage.forEach((image) => image.addEventListener('click', flipImage));
 const arrayCards = [
    {
       name: 'batman',
-      img: 'images/batman.png',
+      img: 'assets/images/batman.png',
    }, 
    {
       name: 'batwoman',
-      img: 'images/batwoman.png',
+      img: 'assets/images/batwoman.png',
    }, 
    {
       name: 'harley',
-      img: 'images/Harley.png',
+      img: 'assets/images/Harley.png',
    }, 
    {
       name: 'joker',
-      img: 'images/joker.png',
+      img: 'assets/images/joker.png',
    }, 
    {
       name: 'superman',
-      img: 'images/superman.png',
+      img: 'assets/images/superman.png',
    }, 
    {
       name: 'wonderwoman',
-      img: 'images/wonderwoman.png',
+      img: 'assets/images/wonderwoman.png',
    }, 
    {
       name: 'batman',
-      img: 'images/batman.png',
+      img: 'assets/images/batman.png',
    }, 
    {
       name: 'batwoman',
-      img: 'images/batwoman.png',
+      img: 'assets/images/batwoman.png',
    }, 
    {
       name: 'harley',
-      img: 'images/Harley.png',
+      img: 'assets/images/Harley.png',
    }, 
    {
       name: 'joker',
-      img: 'images/joker.png',
+      img: 'assets/images/joker.png',
    }, 
    {
       name: 'superman',
-      img: 'images/superman.png',
+      img: 'assets/images/superman.png',
    }, 
    {
       name: 'wonderwoman',
-      img: 'images/wonderwoman.png',
+      img: 'assets/images/wonderwoman.png',
    },
 ]
 

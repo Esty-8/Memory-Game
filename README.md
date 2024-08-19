@@ -47,20 +47,38 @@ The memory game built in JavaScript is an engaging and interactive web-based gam
 ### Lighthouse Testing
 
 #### Homepage
- ![Responsive Landing Page](/assets/images/validator.png)
+ ![Responsive Landing Page](/assets/images/light.png)
 
 #### Level 2 Homepage
- ![Responsive Landing Page](/assets/images/validator.png)
+ ![Responsive Landing Page](/assets/images/House.png)
 
 ### Bugs
-* 
 
-*
+* The Home Page isn't responsive.
 
-*
+* The Level 2 Homepage doesn't resize on mobile devices .
 
 
-## Technologies Used 
+
+## Languages, Frameworks and Libraries
+
+<h2 id="languages-frameworks-libraries">Languages, Frameworks and Libraries</h2>
+
+- <a href="https://cssgenerator.pl/en/transition-generator/"> CSS Generator</a> - Used for styling the project.
+
+- <a href="https://create.microsoft.com/en-us/features/ai-image-generator"> Free AI Image generator</a> - Used for creating the images.
+
+- <a href="https://en.wikipedia.org/wiki/CSS"> CSS3</a> - Used for styling the project.
+
+- <a href="https://github.com/IrisSmok"> Github</a> - Used to store the project code.
+
+- <a href="https://www.gitpod.io/"> Gitpod</a> - An IDE Used for coding.
+
+- <a href="https://balsamiq.com/"> Balsamiq</a> - Used to create site wireframes.
+
+- <a href="https://pixabay.com/sound-effects/search/videogame/?pagi=8"> pixabay</a> - Used to add sounds effects to the game.
+
+- <a href="http://ami.responsivedesign.is/"> Am I Responsive</a> - Used to check if the site is responsive on different screen sizes.>
 
 
 ## Deployment

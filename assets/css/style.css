@@ -156,7 +156,7 @@ h3 {
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
   
 
 #grid-container {
@@ -207,8 +207,8 @@ cursor: pointer;
 
 
 
-/* Media query for Laptops and larger (992px and up) */
-@media screen and (min-width: 900px) {
+/* Media query for Laptops and larger (800px and up) */
+@media screen and (max-width: 850px) {
   
   
 
@@ -232,7 +232,7 @@ cursor: pointer;
     
     #reset-button {
       font-size: 17px;
-      /* margin-right: 240px; */
+      margin-right: 240px;
 
   
 }
@@ -263,7 +263,7 @@ h3 {
 
 
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 300px) {
  
 
   .btn-game, .mobile{

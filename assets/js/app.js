@@ -46,7 +46,7 @@ function themeSong(src) {
    }
  
 
-
+//  function only runs on the click of a button
 
 function startTimer() { 
 const timerId = setInterval(() => {

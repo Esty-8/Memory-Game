@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 const cardImage = document.querySelectorAll('img');
 const showResult = document.querySelector('#score');
 const timeLeft = document.querySelector("#time-left");
@@ -211,4 +211,4 @@ const arrayCards = [
 arrayCards.sort(() =>  0.5 - Math.random())
 
 
-})
+

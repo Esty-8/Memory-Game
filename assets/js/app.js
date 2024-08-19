@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 const cardImage = document.querySelectorAll('img');
 const showResult = document.querySelector('#score');
 const timeLeft = document.querySelector("#time-left");
@@ -7,7 +7,7 @@ const sliderFill = document.querySelector(".fill");
 const soundGame = document.querySelector('.track');
 const resetButton = document.getElementById('reset-button');
 const startButton = document.getElementById('start-button');
-const startCount = 42
+const startCount = 40
 let timeRemain = startCount
 let choosenCard = []
 let cardsIdsChoosen = []
@@ -36,10 +36,11 @@ function playWin() {
 
 
 
-//game theme sound
+//game theme sound,  will play a song on the webpage
+
 function themeSong(src) {
    this.sound = document.createElement("audio");
-   this.sound.src = 'assets/images/game.mp3';
+   this.sound.src = "assets/images/game.mp3";
    document.body.appendChild(this.sound);
    this.sound.play();
    }
@@ -47,7 +48,7 @@ function themeSong(src) {
 
 
 
-
+function startTimer() { 
 const timerId = setInterval(() => {
    timeRemain--
    timeLeft.textContent = timeRemain
@@ -55,7 +56,6 @@ const timerId = setInterval(() => {
    if (timeRemain <= 0 || scoreArray.length == (arrayCards.length / 2)) {
      clearInterval(timerId)
      timeLeft.textContent = '0'
-   //   gameOver.textContent = 'GAME OVER'
    if (timeRemain <= 0) {
        gameOver.textContent = `Game  Over`  
      playSound()
@@ -63,8 +63,8 @@ const timerId = setInterval(() => {
 }
 
  }, 1000)
-
-
+}
+startButton.addEventListener('click', startTimer)
 
 function matchCards() {
   const cardsImages = document.querySelectorAll('img');
@@ -113,7 +113,7 @@ function flipImage() {
    //we adding the new images to the element
    this.setAttribute('src', arrayCards[cardOfId].img)
    if (choosenCard.length == 2) {
-      setTimeout( matchCards, 500)
+      setTimeout( matchCards, 400)
    }
 
 }
@@ -179,4 +179,5 @@ const arrayCards = [
 arrayCards.sort(() =>  0.5 - Math.random())
 
 
-})
+
+

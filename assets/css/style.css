@@ -157,9 +157,7 @@ h3 {
 
 
 @media screen and (max-width: 768px){
-  body {
-    background-color: #add8e6;
-  }
+  
 
 #grid-container {
   /* max-width: 460px; */
@@ -210,12 +208,8 @@ cursor: pointer;
 
 
 /* Media query for Laptops and larger (992px and up) */
-@media screen and (max-width: 850px) {
-  body {
-    color: #37c7eb;
-  }
-
- 
+@media screen and (max-width: 900px) {
+  
   
 
   #grid {
@@ -270,9 +264,7 @@ h3 {
 
 
 @media screen and (max-width: 480px) {
-  body {
-    color: #37c7eb;
-  }
+ 
 
   .btn-game, .mobile{
     padding: 0px;
@@ -299,8 +291,8 @@ h3 {
 
   #image {
     position: relative;
-    width: 70px;
-    height: 100px;
+    width: 60px;
+    height: 80px;
     margin-left: 24px;
     cursor: pointer;
      }

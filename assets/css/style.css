@@ -18,11 +18,8 @@ body {
   float: right;
   color: #fcfdfe;
   border-radius: 5px;
-  /* padding: 30px; */
-  margin-top: 18px;
   width: 120px;
   height: 50px;
-  /* top: 10px; */
   text-align: center;
   background-color: #f87061;
   border: 3px solid #37c7eb;
@@ -34,9 +31,10 @@ body {
  h2  {
   font-size: 30px;
   color: #fcfdfe;
+  padding-bottom: 5px;
+  border-radius: 5px;
   width: 110px;
   text-align: center;
-  /* height: 95px; */
   background-color: #f87061;
   border: 3px solid #37c7eb;
 
@@ -56,13 +54,15 @@ a {
   color: #fcfdfe;
   text-decoration: none;
   padding: 11px;
+  align-items: start;
+  
 }
 
 #level {
   font-size: 20px;
   color: #fcfdfe;
-  /* text-decoration: none; */
   padding: 8px;
+  border-radius: 5px;
   background-color: #f87061;
   border: 3px solid #37c7eb;
  }
@@ -75,9 +75,9 @@ a {
   margin: auto;
 }
 
-#slide-bar .custom-slider {
+#slide-bar  {
   width: 263px;
-  margin-left: 720px;
+  margin-left: 800px;
   position: relative;
 
 }
@@ -85,14 +85,16 @@ a {
 
 .fill {
   height: 20px;
+  margin-top: 10px;
+  padding: 13px;
   background-color: #ec0c5a;
   width: 100%;
-  /* border: 3px solid rgb(106, 23, 23); */
+ 
  
 }
 
 .btn-game {
-  /* display:flex; */
+
   padding: 78px;
   margin-right: 48px;
 
@@ -114,6 +116,7 @@ a {
   width: 87%;
   height: 77%;
   padding: 0px;
+  cursor: pointer;
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
@@ -127,6 +130,7 @@ a {
     float: inline-end;
     font-size: 25px;
     margin-right: 44%;
+    cursor: pointer;
     background-color:#f87061;
     color: #fff;
     border-radius: 15px;
@@ -140,6 +144,7 @@ a {
 
   font-size: 25px;
   padding: 10px;
+  cursor: pointer;
   margin-left: 42%;
   background-color:#f87061;
   color: #fff;
